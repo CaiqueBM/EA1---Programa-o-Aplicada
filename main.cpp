@@ -26,7 +26,7 @@ int main() {
     }
 
     //Separando as variaveis
-    for(int i = 0; i < 4; i++)
+    for(int i = 0; i < n; i++)
     {
         string manip = recep[i];
         char valor[manip.length()];
