@@ -34,29 +34,22 @@ int main() {
         for (int i = 0; i < sizeof(valor); i++)
         {
             valor[i] = manip[i];
-            //cout << "--------------" << endl;
-            //cout << valor[i] << endl;
 
             if(i == 1)
             {
                 tecla[contt] = valor[i];
-                //cout << "Tecla: " << tecla[contt] << ", i = " << i << endl;
                 contt++;
             }
             if(i == 3)
             {
                 letra[contl] = valor[i];
-                //cout <<  "Letra: " << letra[contl] << ", i = " << endl;
                 contl++;
             }
         }
-            //cout << "Tecla 0 = " << tecla[0];
-            //cout << "Letra 0 = " << letra[0];
+
+        //Buscar a palavra com a tecla e as letras
         for(int i = 0; i < n; i++)
         {
-            //cout << "Tecla for: " << tecla[i] << endl;
-            //cout <<  "Letra for: " << letra[i] << endl;
-
             switch(tecla[i])
             {
                 case '2':
@@ -118,12 +111,11 @@ int main() {
                         case '4': palavra[i] = 'Z'; break;
                     } break;
             }
-            //cout << palavra[i] << endl;
         }
     }
 cout << endl;
 
-
+//Mostrando a palavra
 for(int i = 0; i < n; i++)
         {
             cout << palavra[i];
